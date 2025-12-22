@@ -1,3 +1,2 @@
-﻿# CustomTools
-
-These are some tools I developed during my free time. Mostly to serve CTFs or BugBounty!!
+﻿# Scripts
+These are some scripts, tools and CVE POCs for educational purposes!
